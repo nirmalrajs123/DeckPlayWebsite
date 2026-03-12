@@ -1,0 +1,116 @@
+.pricing-container {
+    text-align: center;
+    padding: 6rem 3rem;
+    background-color: #ffffff;
+    color: #1a202c;
+}
+
+.pricing-container h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 3rem;
+    color: #1a202c;
+}
+
+.pricing-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.pricing-card {
+    background: #ffffff;
+    padding: 3rem 2rem;
+    border-radius: 16px;
+    width: 320px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricing-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.pricing-card.active {
+    border: 2px solid #FF5722;
+    position: relative;
+    box-shadow: 0 10px 15px -3px rgba(255, 87, 34, 0.1);
+}
+
+.pricing-card.active::before {
+    content: 'Most Popular';
+    position: absolute;
+    top: -12px;
+    background-color: #FF5722;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.pricing-card h3 {
+    font-size: 1.25rem;
+    color: #5C5C5C;
+    margin-bottom: 1rem;
+}
+
+.pricing-card h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    color: #1a202c;
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+    text-align: left;
+    width: 100%;
+}
+
+.pricing-card li {
+    margin: 0.75rem 0;
+    color: #5C5C5C;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.pricing-card li::before {
+    content: '✓';
+    color: #FF5722;
+    font-weight: 800;
+}
+
+.pricing-card button {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #FF5722;
+    background: transparent;
+    color: #FF5722;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: auto;
+}
+
+.pricing-card.active button {
+    background: #FF5722;
+    color: white;
+}
+
+.pricing-card button:hover {
+    background: #FF5722;
+    color: white;
+}
