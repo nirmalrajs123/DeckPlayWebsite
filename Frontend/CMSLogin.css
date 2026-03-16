@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --primary: #f57224;
+    --primary-glow: rgba(245, 114, 36, 0.4);
+    --bg-dark: #0a0a0e;
+    --card-bg: rgba(255, 255, 255, 0.03);
+    --border: rgba(255, 255, 255, 0.08);
+    --text-main: #ffffff;
+    --text-dim: #94a3b8;
+}
+
+.cms-login-container {
+    min-height: 100vh;
+    background: var(--bg-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    color: var(--text-main);
+    overflow: hidden;
+    position: relative;
+    padding: 2rem;
+}
+
+/* Ambient Animated Glows */
+.ambient-glow {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    filter: blur(120px);
+    z-index: 0;
+    opacity: 0.15;
+    animation: pulse 10s infinite alternate;
+}
+
+.glow-1 {
+    background: var(--primary);
+    top: -100px;
+    right: -100px;
+}
+
+.glow-2 {
+    background: #6366f1;
+    bottom: -150px;
+    left: -150px;
+    animation-delay: -5s;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1) translate(0, 0); opacity: 0.1; }
+    100% { transform: scale(1.2) translate(50px, 50px); opacity: 0.2; }
+}
+
+.cms-login-content {
+    display: flex;
+    width: 100%;
+    max-width: 1100px;
+    gap: 6rem;
+    z-index: 10;
+    align-items: center;
+}
+
+/* Brand Side */
+.cms-brand-side {
+    flex: 1;
+}
+
+.cms-logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    margin-bottom: 4rem;
+}
+
+.deck-play-logo-svg {
+    width: 60px;
+    height: 42px;
+}
+
+.logo-frame {
+    fill: var(--card-bg);
+    stroke: var(--primary);
+    stroke-width: 4px;
+}
+
+.logo-play-button {
+    fill: var(--primary);
+}
+
+.logo-brand-name {
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+}
+
+.logo-brand-name .bold { font-weight: 800; }
+.logo-brand-name .light { font-weight: 300; opacity: 0.8; }
+
+.hero-text-container .badge {
+    display: inline-block;
+    padding: 6px 14px;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 100px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: var(--primary);
+    margin-bottom: 2rem;
+}
+
+.hero-text-container h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+    letter-spacing: -2px;
+}
+
+.gradient-text {
+    background: linear-gradient(to right, var(--primary), #ffa76e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-text-container p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: var(--text-dim);
+    max-width: 450px;
+}
+
+.feature-status {
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.status-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-dim);
+}
+
+.status-item .dot {
+    width: 8px;
+    height: 8px;
+    background: #10b981;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #10b981;
+}
+
+/* Form Side */
+.cms-form-side {
+    flex: 0.9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.glass-card {
+    width: 100%;
+    max-width: 460px;
+    background: var(--card-bg);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border: 1px solid var(--border);
+    border-radius: 32px;
+    padding: 3.5rem;
+    position: relative;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.card-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.card-header h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.5px;
+}
+
+.card-header p {
+    color: var(--text-dim);
+    font-size: 0.95rem;
+}
+
+.input-field {
+    margin-bottom: 2rem;
+}
+
+.label-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-field label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-dim);
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.input-wrapper input {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+    padding-right: 3rem;
+    color: white;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.input-wrapper input:focus {
+    outline: none;
+    border-color: var(--primary);
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 0 4px rgba(245, 114, 36, 0.1);
+}
+
+.input-icon {
+    position: absolute;
+    right: 1.25rem;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.3;
+}
+
+.text-link {
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 0.75rem;
+    font-weight: 650;
+}
+
+.text-link:hover { text-decoration: underline; }
+
+.submit-btn {
+    width: 100%;
+    padding: 1.1rem;
+    background: var(--primary);
+    border: none;
+    border-radius: 14px;
+    color: white;
+    font-weight: 800;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px var(--primary-glow);
+}
+
+.submit-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.error-message-box {
+    background: rgba(239, 68, 68, 0.1);
+    color: #ef4444;
+    padding: 1rem;
+    border-radius: 12px;
+    border: 1px solid rgba(239, 68, 68, 0.2);
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+.card-footer {
+    margin-top: 2.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--text-dim);
+}
+
+.card-footer a {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.legal-tag {
+    margin-top: 3rem;
+    font-size: 0.7rem;
+    color: var(--text-dim);
+    letter-spacing: 1px;
+    opacity: 0.5;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .cms-login-content {
+        flex-direction: column;
+        gap: 4rem;
+        align-items: center;
+        text-align: center;
+    }
+    .cms-brand-side, .cms-form-side {
+        width: 100%;
+    }
+    .cms-logo-wrapper { justify-content: center; }
+    .hero-text-container p { margin: 0 auto; }
+    .feature-status { justify-content: center; }
+}
+
+@media (max-width: 480px) {
+    .hero-text-container h1 { font-size: 3rem; }
+    .glass-card { padding: 2rem; }
+}
