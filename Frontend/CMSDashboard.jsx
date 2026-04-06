@@ -11,7 +11,10 @@ const CMSDashboard = () => {
                 <div className="sidebar-header">
                     <div className="dashboard-logo">
                         <div className="logo-sq"></div>
-                        <span>DECK PLAY</span>
+                        <span className="brand-name" style={{ gap: '4px' }}>
+                            <span className="brand-deck">DECK</span>
+                            <span className="brand-play">PLAY</span>
+                        </span>
                     </div>
                 </div>
 

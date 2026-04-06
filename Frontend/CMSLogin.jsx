@@ -113,7 +113,7 @@ const CMSLogin = () => {
           </div>
 
           <div className="legal-tag">
-            © 2026 DECK PLAY GLOBAL. PROTECTED BY AES-256.
+            © 2026 <span className="brand-name"><span className="brand-deck">DECK</span> <span className="brand-play" style={{ color: '#fff' }}>PLAY</span></span> GLOBAL. PROTECTED BY AES-256.
           </div>
         </div>
       </div>
