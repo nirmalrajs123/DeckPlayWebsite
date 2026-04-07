@@ -90,7 +90,7 @@ const Header = () => {
                                         background: 'rgba(255, 255, 255, 0.98)',
                                         backdropFilter: 'blur(25px)',
                                         padding: '1.5rem',
-                                        borderRadius: '24px',
+                                        borderRadius: '12px',
                                         boxShadow: '0 30px 60px -12px rgba(0, 0, 0, 0.25)',
                                         border: '1px solid rgba(0, 0, 0, 0.05)',
                                         zIndex: 1001
@@ -141,7 +141,7 @@ const Header = () => {
                                         background: 'rgba(255, 255, 255, 0.98)',
                                         backdropFilter: 'blur(25px)',
                                         padding: '1.5rem',
-                                        borderRadius: '24px',
+                                        borderRadius: '12px',
                                         boxShadow: '0 30px 60px -12px rgba(0, 0, 0, 0.25)',
                                         border: '1px solid rgba(0, 0, 0, 0.05)',
                                         zIndex: 1001
@@ -194,7 +194,7 @@ const Header = () => {
                                         background: 'rgba(255, 255, 255, 0.98)',
                                         backdropFilter: 'blur(25px)',
                                         padding: '2rem',
-                                        borderRadius: '24px',
+                                        borderRadius: '12px',
                                         boxShadow: '0 30px 60px -12px rgba(0, 0, 0, 0.25)',
                                         border: '1px solid rgba(0, 0, 0, 0.05)',
                                         zIndex: 1001
@@ -209,13 +209,13 @@ const Header = () => {
                                                 { label: "Healthcare", to: "/solutions/healthcare" },
                                                 { label: "Education", to: "/solutions/education" }
                                             ].map((link, idx) => (
-                                                <Link 
-                                                    key={idx} 
-                                                    to={link.to} 
-                                                    style={{ 
-                                                        color: '#475569', 
-                                                        textDecoration: 'none', 
-                                                        fontSize: '0.95rem', 
+                                                <Link
+                                                    key={idx}
+                                                    to={link.to}
+                                                    style={{
+                                                        color: '#475569',
+                                                        textDecoration: 'none',
+                                                        fontSize: '0.95rem',
                                                         fontWeight: 600,
                                                         padding: '0.8rem 1.2rem',
                                                         borderRadius: '12px',

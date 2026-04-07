@@ -118,7 +118,7 @@ const BenchmarkShowcase = ({ industries, activeTab, setActiveTab }) => {
                                     </motion.div>
                                 </AnimatePresence>
                             </div>
-                            
+
                             {/* NEW: Dynamic Description Content under image */}
                             <motion.div
                                 key={`desc-${activeTab}`}
@@ -195,7 +195,7 @@ const SolutionDetail = ({ industryData, onBack }) => {
                             <div style={{ fontSize: '1.25rem', color: '#475569', lineHeight: 1.6, marginBottom: '3rem' }}>
                                 {industryData.desc}
                             </div>
-                            
+
                             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem' }}>
                                 {industryData.keyStats?.map((st, i) => (
                                     <div key={i}>
@@ -212,9 +212,9 @@ const SolutionDetail = ({ industryData, onBack }) => {
                             transition={{ duration: 1 }}
                             style={{ position: 'relative' }}
                         >
-                            <div style={{ 
-                                background: '#fff', padding: '12px', borderRadius: '48px', 
-                                boxShadow: '0 40px 100px rgba(0,0,0,0.12)', border: '1px solid #f1f1ef' 
+                            <div style={{
+                                background: '#fff', padding: '12px', borderRadius: '48px',
+                                boxShadow: '0 40px 100px rgba(0,0,0,0.12)', border: '1px solid #f1f1ef'
                             }}>
                                 {industryData.image.endsWith('.mp4') ? (
                                     <video src={industryData.image} autoPlay muted loop playsInline style={{ width: '100%', borderRadius: '36px', display: 'block', objectFit: 'cover', minHeight: '500px' }} />
@@ -242,7 +242,7 @@ const SolutionDetail = ({ industryData, onBack }) => {
 
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '2rem' }}>
                         {industryData.deepFeatures?.map((f, i) => (
-                            <motion.div 
+                            <motion.div
                                 key={i}
                                 whileHover={{ y: -10 }}
                                 style={{ background: '#fff', padding: '3rem 2.5rem', borderRadius: '32px', border: '1px solid #f1f1ef', boxShadow: '0 10px 30px rgba(0,0,0,0.02)' }}
@@ -264,7 +264,7 @@ const SolutionDetail = ({ industryData, onBack }) => {
 const Solutions = () => {
     const { industry } = useParams();
     const navigate = useNavigate();
-    
+
     const allSolutions = [
         {
             id: "retail",
@@ -382,12 +382,12 @@ const Solutions = () => {
                                 </motion.div>
                             </div>
                         </section>
-                        <BenchmarkShowcase 
-                            industries={allSolutions} 
-                            activeTab={activeTab} 
-                            setActiveTab={handleTabChange} 
+                        <BenchmarkShowcase
+                            industries={allSolutions}
+                            activeTab={activeTab}
+                            setActiveTab={handleTabChange}
                         />
-                        
+
                         <section style={{ padding: '8rem 0', textAlign: 'center' }}>
                             <div className="container">
                                 <h2 style={{ fontSize: '3rem', fontWeight: 900, marginBottom: '2rem' }}>Ready for a specific deep-dive?</h2>
@@ -404,9 +404,9 @@ const Solutions = () => {
                         transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
                     >
                         {selectedIndustry && (
-                            <SolutionDetail 
-                                industryData={selectedIndustry} 
-                                onBack={() => navigate('/solutions')} 
+                            <SolutionDetail
+                                industryData={selectedIndustry}
+                                onBack={() => navigate('/solutions')}
                             />
                         )}
                     </motion.div>
@@ -424,13 +424,13 @@ const Solutions = () => {
                     <div style={{
                         background: '#0f172a',
                         padding: '6rem',
-                        borderRadius: '48px',
+                        borderRadius: '12px',
                         boxShadow: '0 50px 100px rgba(0,0,0,0.4)',
                         position: 'relative',
                         overflow: 'hidden'
                     }}>
                         <div style={{ position: 'absolute', top: '-100px', right: '-100px', width: '400px', height: '400px', background: 'rgba(249, 115, 22, 0.05)', filter: 'blur(100px)', borderRadius: '50%' }} />
-                        
+
                         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '4rem', position: 'relative', zIndex: 2 }}>
                             {[
                                 { t: "Delta-Sync", d: "Only push content changes. Save gigabytes of data monthly across your entire screen network.", i: "⚡" },

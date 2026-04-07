@@ -76,7 +76,7 @@ function Home() {
 
                     <motion.div
                         className="dashboard-frame dashboard-frame-lighting"
-                        style={{ flex: '1 1 700px', maxWidth: '900px', borderRadius: '48px', overflow: 'hidden', boxShadow: '0 40px 100px rgba(0,0,0,0.3)' }}
+                        style={{ flex: '1 1 700px', maxWidth: '900px', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 40px 100px rgba(0,0,0,0.3)' }}
                         initial={{ opacity: 0, y: 50, scale: 0.95 }}
                         whileInView={{ opacity: 1, y: 0, scale: 1 }}
                         viewport={{ once: true }}
@@ -191,7 +191,7 @@ function Home() {
                                                 alignItems: 'center',
                                                 background: '#0f172a',
                                                 padding: '3.5rem 2.5rem',
-                                                borderRadius: '32px',
+                                                borderRadius: '12px',
                                                 border: '1px solid rgba(255, 255, 255, 0.05)',
                                                 boxShadow: '0 30px 60px rgba(0,0,0,0.3)',
                                                 transition: 'all 0.4s cubic-bezier(0.16, 1, 0.3, 1)'
@@ -204,7 +204,7 @@ function Home() {
                                                 background: 'rgba(249, 115, 22, 0.08)',
                                                 width: '80px',
                                                 height: '80px',
-                                                borderRadius: '24px',
+                                                borderRadius: '12px',
                                                 display: 'flex',
                                                 alignItems: 'center',
                                                 justifyContent: 'center'
@@ -280,7 +280,7 @@ function Home() {
                             >
                                 <div style={{
                                     width: '100%',
-                                    borderRadius: '48px',
+                                    borderRadius: '12px',
                                     overflow: 'hidden',
                                     boxShadow: '0 40px 100px rgba(0,0,0,0.1)',
                                     background: '#000'
@@ -305,10 +305,10 @@ function Home() {
 
                                         <motion.div
                                             whileHover={{ y: -5 }}
-                                            style={{ position: 'absolute', bottom: '30px', left: '-120px', width: '240px', background: '#fff', padding: '1.25rem', borderRadius: '16px', border: '1px solid #f1f5f9', boxShadow: '0 10px 25px rgba(0,0,0,0.05)', textAlign: 'left' }}
+                                            style={{ position: 'absolute', bottom: '30px', left: '-120px', width: '240px', background: '#fff', padding: '2rem', borderRadius: '12px', border: '1px solid #f1f5f9', boxShadow: '0 10px 25px rgba(0,0,0,0.05)', textAlign: 'left' }}
                                         >
-                                            <h5 style={{ margin: '0 0 0.5rem 0', fontSize: '0.9rem', color: '#1a1a1a', fontWeight: '800' }}>LOCAL EDGE</h5>
-                                            <p style={{ margin: 0, fontSize: '0.8rem', color: '#64748b', lineHeight: 1.5 }}>Edge-computing for offline playback and multi-node redundancy.</p>
+                                            <h5 style={{ margin: '0 0 0.5rem 0', fontSize: '1rem', color: '#1a1a1a', fontWeight: '800' }}>LOCAL EDGE</h5>
+                                            <p style={{ margin: 0, fontSize: '0.85rem', color: '#64748b', lineHeight: 1.5 }}>Edge-computing for offline playback and multi-node redundancy.</p>
                                         </motion.div>
                                     </div>
                                 </motion.div>
@@ -330,10 +330,10 @@ function Home() {
 
                                         <motion.div
                                             whileHover={{ y: -5 }}
-                                            style={{ position: 'absolute', top: '-10px', left: '40px', width: '240px', background: '#fff', padding: '1.25rem', borderRadius: '16px', border: '1px solid #f1f5f9', boxShadow: '0 10px 25px rgba(0,0,0,0.05)', textAlign: 'left' }}
+                                            style={{ position: 'absolute', top: '-10px', left: '40px', width: '240px', background: '#fff', padding: '2rem', borderRadius: '12px', border: '1px solid #f1f5f9', boxShadow: '0 10px 25px rgba(0,0,0,0.05)', textAlign: 'left' }}
                                         >
-                                            <h5 style={{ margin: '0 0 0.5rem 0', fontSize: '0.9rem', color: '#1a1a1a', fontWeight: '800' }}>GLOBAL CLUSTERS</h5>
-                                            <p style={{ margin: 0, fontSize: '0.8rem', color: '#64748b', lineHeight: 1.5 }}>Scale architecture designed for millions of globally synced nodes.</p>
+                                            <h5 style={{ margin: '0 0 0.5rem 0', fontSize: '1rem', color: '#1a1a1a', fontWeight: '800' }}>GLOBAL CLUSTERS</h5>
+                                            <p style={{ margin: 0, fontSize: '0.85rem', color: '#64748b', lineHeight: 1.5 }}>Scale architecture designed for millions of globally synced nodes.</p>
                                         </motion.div>
                                     </div>
                                 </motion.div>
@@ -395,7 +395,7 @@ function Home() {
                             <div className="dashboard-frame-lighting" style={{ position: 'relative' }}>
                                 <div style={{
                                     width: '100%',
-                                    borderRadius: '48px',
+                                    borderRadius: '12px',
                                     overflow: 'hidden',
                                     boxShadow: '0 40px 100px rgba(0,0,0,0.1)',
                                     background: '#000'
@@ -605,13 +605,13 @@ function Home() {
 
                         {/* Right Side: Informational Sidebar */}
                         <div style={{
-                            background: '#ffffff',
-                            borderRadius: '12px',
-                            padding: '4rem',
-                            boxShadow: '0 30px 60px rgba(0,0,0,0.03)',
-                            border: '1px solid #f1f1ef'
-                        }}>
-                            <motion.div
+                        background: '#0f172a',
+                        padding: '6rem',
+                        borderRadius: '12px',
+                        boxShadow: '0 50px 100px rgba(0,0,0,0.4)',
+                        position: 'relative',
+                        overflow: 'hidden'
+                    }}>        <motion.div
                                 key={`sidebar-${hoveredIndustryTitle}`}
                                 initial={{ opacity: 0, x: 20 }}
                                 animate={{ opacity: 1, x: 0 }}
